@@ -1,2 +1,2 @@
 # neilnugs.github.io
-personal portfolio
+personal portfolio @ https://neilnugs.github.io/
