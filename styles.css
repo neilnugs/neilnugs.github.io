@@ -24,6 +24,9 @@
     border-radius: 25px;
     padding: 15px;
 }
+.seasoning:hover {
+    background-color: rgb(255, 255, 255);
+}
 .topnav {
     color: #c2a2fc
 }
