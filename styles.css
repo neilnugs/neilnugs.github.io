@@ -8,10 +8,56 @@
     border-radius: 25px;
     padding: 15px;
     border: 2px solid #30a4f6;
-    height: 50vh;
-    width: 50vw;
+}
+.aboutme:hover {
+    background-color: rgb(255, 255, 255);
+}
+.connectwithme {
+    color: rgb(5, 152, 152);
+    background-color: rgb(184, 235, 237);
+    border-radius: 25px;
+    padding: 15px;
+}
+.seasoning {
+    color: rgb(5, 152, 152);
+    background-color: rgb(184, 235, 237);
+    border-radius: 25px;
+    padding: 15px;
 }
 .topnav {
     color: #c2a2fc
-
 }
+.column {
+    float: left;
+    width: 48%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.cajun {
+    height: 100px;
+    width: 10px;
+    opacity: 0%
+}
+.tajin {
+    height: 100px;
+    width: 10px;
+    opacity: 0%;
+}
+.cajun:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+}
+.tajin:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+}
+.image {
+    padding: 25px;
+}
+.background {
+    background-image: linear-gradient(to bottom right, rgb(68, 133, 208), rgb(196, 149, 250));
+  }
