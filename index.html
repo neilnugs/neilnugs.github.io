@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Neil Nag</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+		<!-- favicon from FreePik -->
+    
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <ul>
+          <li>
+            <a href="#home" class="logo">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="#about" class="logo">About</a></li>
+					<li><a href="#projects" class="logo">Projects</a></li>
+          <li><a href="#experience" class="logo">Experience</a></li>
+					<li>
+						<a href="https://github.com/neilnugs/" class="logo" target="_blank" aria-label="GitHub">
+							<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.21.66-.47v-1.72c-2.78.61-3.37-1.34-3.37-1.34-.45-1.14-1.11-1.45-1.11-1.45-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.1 2.94.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.04-2.67-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.53 9.53 0 0112 6.8c.85.004 1.71.114 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.69 1.04 1.58 1.04 2.67 0 3.84-2.34 4.69-4.57 4.94.36.31.69.92.69 1.85v2.75c0 .26.16.56.67.46A10.004 10.004 0 0022 12c0-5.52-4.48-10-10-10z" fill="currentColor"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/neil-nag/" class="logo" target="_blank" aria-label="LinkedIn">
+							<svg width="36" height="36" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+								<path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"></path>
+							</svg>
+							
+						</a>
+					</li>
+					<li>
+						<a href="mailto:neil.nag29@gmail.com" class="logo" target="_blank" aria-label="Email Neil">
+							<svg width="36" height="36" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 14 6 L 36 6 C 40.430666 6 44 9.5693339 44 14 L 44 36 C 44 40.430666 40.430666 44 36 44 L 14 44 C 9.5693339 44 6 40.430666 6 36 L 6 14 C 6 9.5693339 9.5693339 6 14 6 z M 13 15 C 11.35503 15 10 16.35503 10 18 L 10 32 C 10 33.64497 11.35503 35 13 35 L 37 35 C 38.64497 35 40 33.64497 40 32 L 40 18 C 40 16.35503 38.64497 15 37 15 L 13 15 z M 13.414062 17 L 36.583984 17 L 27.677734 25.892578 C 26.18494 27.382984 23.796834 27.382819 22.304688 25.890625 L 13.414062 17 z M 38 18.412109 L 38 31.587891 L 31.402344 25 L 38 18.412109 z M 12 18.414062 L 18.585938 25 L 12 31.585938 L 12 18.414062 z M 29.988281 26.412109 L 36.585938 33 L 13.414062 33 L 20 26.414062 L 20.890625 27.304688 C 23.146478 29.56054 26.832638 29.562194 29.089844 27.308594 L 29.988281 26.412109 z" fill="currentColor"/>
+							</svg>
+						</a>
+					</li>
+          <li>
+            <button class="theme-toggle" class="logo" id="theme-toggle" aria-label="Toggle theme">
+              <svg class="sun-icon" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-18a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V2a1 1 0 0 1 1-1zm0 18a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zM2 12a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm18 0a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zM5.3 5.3a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 0 1-1.4 1.4L5.3 6.7a1 1 0 0 1 0-1.4zm12.7 12.7a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 0 1-1.4 1.4l-1.4-1.4a1 1 0 0 1 0-1.4zM5.3 18.7a1 1 0 0 1 0-1.4l1.4-1.4a1 1 0 0 1 1.4 1.4l-1.4 1.4a1 1 0 0 1-1.4 0zM18 5.3a1 1 0 0 1 0 1.4l-1.4 1.4a1 1 0 0 1-1.4-1.4l1.4-1.4a1 1 0 0 1 1.4 0z"/>
+              </svg>
+              <svg class="moon-icon" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+                <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <h1>Hello, I'm <span style="color: var(--primary);">Neil Nag</span></h1>
+        <p>Electrical engineering and computer science student @ UNSW</p>
+        <div style="margin-top: 2rem;">
+          <a class="learn-more" href="#about" role="button">Learn More</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        
+        <div class="grid" flex>
+
+          <div>
+            <h2>About Me</h2>
+            <p>
+              I'm currently a penultimate electrical engineering and computer science student at UNSW. 
+							I'm a big fan of learning skills to fit the needs of my projects. So far, this involves programming, designing PCBs or picking up content creation workflows.
+            </p>
+            <p>
+              And when I'm not coding, you can find me immersing myself into audio-visual technologies, whether creating or consuming. I also really enjoy lifting heavy, bouldering and going for walks.
+            </p>
+          </div>
+          <div>
+            <article>
+              <h3>Skills & Technologies</h3>
+              <section class="skills">
+                <div class="grid-container">
+                    <div class="skill">C</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">Java</div>
+                    <div class="skill">Rust</div>
+                    <div class="skill">Javascript</div>
+                    <div class="skill">Typescript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">PostgreSQL</div>
+                    <div class="skill">Flask</div>
+                    <div class="skill">Git</div>
+                    <div class="skill">Matlab</div>
+                    <div class="skill">Altium</div>
+                    <div class="skill">Simulink</div>
+                    <div class="skill">VHDL</div>
+                    <div class="skill">Verilog</div>
+                </div>
+              </section>
+            </article>
+          </div>
+        </div>
+      </section>
+			<!-- Projects Section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <img src="docs/yoshi.png" alt="Discord">
+            <div class="content">
+              <h3>Discord Music and Content Bot</h3>
+              <p>A full functional discord bot that plays music with other miscellaneous commands.</p>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Discord API</span>
+                <span>
+                  <a href="https://github.com/neilnugs/" class="logo" target="_blank" aria-label="GitHub">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.21.66-.47v-1.72c-2.78.61-3.37-1.34-3.37-1.34-.45-1.14-1.11-1.45-1.11-1.45-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.1 2.94.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.04-2.67-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.53 9.53 0 0112 6.8c.85.004 1.71.114 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.69 1.04 1.58 1.04 2.67 0 3.84-2.34 4.69-4.57 4.94.36.31.69.92.69 1.85v2.75c0 .26.16.56.67.46A10.004 10.004 0 0022 12c0-5.52-4.48-10-10-10z" fill="currentColor"/>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-img" src="docs/goomba.png" alt="Project 2">
+            <div class="content">
+              <h3>Audio Visualiser</h3>
+              <p>Using an LED matrix connected to an FPGA board to display sound frequncies in a aesthetic form.</p>
+              <div class="tags">
+                <span class="tag">Verilog</span>
+                <span class="tag">Altium</span>
+                <span>
+                  <a href="https://github.com/neilnugs/" class="logo" target="_blank" aria-label="GitHub">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.21.66-.47v-1.72c-2.78.61-3.37-1.34-3.37-1.34-.45-1.14-1.11-1.45-1.11-1.45-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.1 2.94.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.04-2.67-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.53 9.53 0 0112 6.8c.85.004 1.71.114 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.69 1.04 1.58 1.04 2.67 0 3.84-2.34 4.69-4.57 4.94.36.31.69.92.69 1.85v2.75c0 .26.16.56.67.46A10.004 10.004 0 0022 12c0-5.52-4.48-10-10-10z" fill="currentColor"/>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="/docs/chopper.jpg" alt="Project 3">
+            <div class="content">
+              <h3>Video editor</h3>
+              <p>A lightweight video editor application, useful for quick and easy editing.</p>
+              <div class="tags">
+                <span class="tag">Rust</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Tailwind</span>
+                <span>
+                  <a href="https://github.com/neilnugs/" class="logo" target="_blank" aria-label="GitHub">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.21.66-.47v-1.72c-2.78.61-3.37-1.34-3.37-1.34-.45-1.14-1.11-1.45-1.11-1.45-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.1 2.94.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.04-2.67-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.53 9.53 0 0112 6.8c.85.004 1.71.114 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.69 1.04 1.58 1.04 2.67 0 3.84-2.34 4.69-4.57 4.94.36.31.69.92.69 1.85v2.75c0 .26.16.56.67.46A10.004 10.004 0 0022 12c0-5.52-4.48-10-10-10z" fill="currentColor"/>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="/docs/chopper.jpg" alt="Project 3">
+            <div class="content">
+              <h3>Solar Inverter</h3>
+              <ul>
+                <li>Designed and built a smart solar inverter enabling 12V DC-AC conversion with real-time sensor monitoring for
+                  temperature, humidity, and power.</li>
+                <li>Configured system inputs/outputs and selected components based on high-level
+                  design, achieving functionality under a $100 budget.</li>  
+                <li>Developed schematics, fabricated a 2 layer PCB, and integrated
+                  ESP32 microcontroller for networked sensor communication via web server.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Altium</span>
+                <span class="tag">LTSpice</span>
+                <span>
+                  <a href="https://github.com/neilnugs/" class="logo" target="_blank" aria-label="GitHub">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.21.66-.47v-1.72c-2.78.61-3.37-1.34-3.37-1.34-.45-1.14-1.11-1.45-1.11-1.45-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.1 2.94.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.04-2.67-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.53 9.53 0 0112 6.8c.85.004 1.71.114 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.69 1.04 1.58 1.04 2.67 0 3.84-2.34 4.69-4.57 4.94.36.31.69.92.69 1.85v2.75c0 .26.16.56.67.46A10.004 10.004 0 0022 12c0-5.52-4.48-10-10-10z" fill="currentColor"/>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="/docs/chopper.jpg" alt="Project 3">
+            <div class="content">
+              <h3>Point Of Sale restaurant application</h3>
+              <ul>
+                <li>Designed and collaboratively developed a waiting management system for 
+                  restaurants, serving as Product Owner and managing the project lifecycle over 
+                  three iterative sprints.</li>
+                <li>Created frontend with TypeScript, React, and Daisy UI, 
+                  integrating API calls with Python backend, and optimised UI/UX and accessibility 
+                  via carefully planned wireframes.</li>  
+                <li>Led AGILE cross-functional meetings, Dockeried the application, and maintained 
+                  version control with Git.</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Typescript</span>
+                <span class="tag">React</span>
+                <span class="tag">DaisyUI</span>
+                <span class="tag">Python</span>
+                <span>
+                  <a href="https://github.com/neilnugs/" class="logo" target="_blank" aria-label="GitHub">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.21.66-.47v-1.72c-2.78.61-3.37-1.34-3.37-1.34-.45-1.14-1.11-1.45-1.11-1.45-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.1 2.94.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.04-2.67-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.53 9.53 0 0112 6.8c.85.004 1.71.114 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.65.69 1.04 1.58 1.04 2.67 0 3.84-2.34 4.69-4.57 4.94.36.31.69.92.69 1.85v2.75c0 .26.16.56.67.46A10.004 10.004 0 0022 12c0-5.52-4.48-10-10-10z" fill="currentColor"/>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h3>Redback Racing</h3>
+              <h4>Embedded Systems Engineer</h4>
+              <p class="date">2024 - Present</p>
+              <ul>
+                <li>Researched and implemented new sensors into the low voltage systems of the car, including strain gauge and general signal amplification configurations</li>
+                <li>Debugged Autonomous Systems Latch PCB, Power Distribution Module control PCB and CANnode verification PCB, including STM32 programming</li>
+                <li>Documented and ensured created components are thoroughly up to F-SAE competition specifications</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <h3>Sydney Quantum Academy Research Scholar @ USYD</h3>
+              <h4>Undergraduate Research Assistant</h4>
+              <p class="date">2023 Summer</p>
+              <ul>
+                <li>Created 5 wave visualisation graphs to describe quantum chemistry principles.</li>
+                <li>Presented a research summary to a group of over 15 postgraduate students.</li>
+                <li>Participated in weekly lab meetings to discuss progress, troubleshoot issues, and refine research approaches.</li>
+              </ul>
+              
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h3>UNSW Mathematics Society</h3>
+              <h4>Secretary and Grievance Officer</h4>
+              <p class="date">2024 Oct - Present</p>
+              <ul>
+                <li>Received and replied all correspondence on behalf of the club</li>
+                <li>Fostered an inclusive culture and resolved grievances with extreme care and attention to respondent details</li>
+                <li>Provided an easy access point for over 4000 members of the constituent members</li>
+              </ul>
+              <h4>Creative Director</h4>
+              <p class="date">2022 - 2024 Oct</p>
+              <ul>
+                <li>Developed and executed content timelines, release schedules, ensuring seamless coordination of my own
+                  team of 8 with other content teams</li>
+                <li>Produced several high quality videos, podcasts, graphics, and short skits using audio-visual technologies,
+                  leading to a 20% subscriber increase on YouTube and 10,000 collective followers across all platforms</li>
+                <li>Managed 3 end-to-end merchandise bundle creation cycles (stickers, hoodies, shirts, crewnecks, tote bags)</li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="timeline-item right">
+            <div class="timeline-content">
+              <h3>Bachelor of Engineering Double Degree</h3>
+              <h4>UNSW</h4>
+              <p class="date">2021 - 2026</p>
+              <p>
+                Bachelor's degree in Electrical Engineering (honours) and Computer Science.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="container">
+      <small>
+        © <span id="year"></span> Neil Nag. All rights reserved.
+      </small>
+    </footer>
+
+    <script>
+      // Theme toggle functionality
+      document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        // Set initial theme based on user preference
+        if (localStorage.getItem('theme')) {
+          document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+          updateThemeIcons(localStorage.getItem('theme'));
+        } else {
+          const initialTheme = prefersDarkScheme.matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', initialTheme);
+          updateThemeIcons(initialTheme);
+        }
+        
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+          
+          document.documentElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('theme', newTheme);
+          updateThemeIcons(newTheme);
+        });
+        
+        function updateThemeIcons(theme) {
+          if (theme === 'dark') {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+          } else {
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+          }
+        }
+        
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+      });
+
+      // Smooth scrolling with easing
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (!targetElement) return;
+          
+          const startPosition = window.pageYOffset;
+          const headerOffset = 100; // Offset for header height and some padding
+					const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+          const distance = targetPosition - startPosition;
+          const duration = 700; // ms
+          let start = null;
+          
+          function step(timestamp) {
+            if (!start) start = timestamp;
+            const progress = timestamp - start;
+            const percentage = Math.min(progress / duration, 1);
+            
+            // Easing function: easeInOutCubic
+            const easing = percentage < 0.5
+              ? 4 * percentage * percentage * percentage
+              : 1 - Math.pow(-2 * percentage + 2, 3) / 2;
+            
+            window.scrollTo(0, startPosition + distance * easing);
+            
+            if (progress < duration) {
+              window.requestAnimationFrame(step);
+            }
+          }
+          
+          window.requestAnimationFrame(step);
+        });
+      });
+    </script>
+  </body>
+</html>
